@@ -3,76 +3,116 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background: radial-gradient(circle, rgba(63, 203, 251, 1) 0%, rgba(109, 70, 252, 1) 100%);
+  background-color: white;
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.conversor {
+.conversor-moeda {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(9, 1fr);
-  gap: 8px;
+  grid-template-rows: repeat(10, 1fr);
+  gap: 6px;
   height: 100vh;
   width: 100vw;
-  
 }
 
-.div1 {
+.header {
   grid-column: span 8 / span 8;
-  background-color: #a79c9c;
+  background-color: #e6e0e0;
   display: flex;
   height: 100%;
   width: 100%;
-}
 
-.div2 {
-  grid-column: span 8 / span 8;
-  grid-column-start: 1;
-  grid-row-start: 9;
-  background-color: #a79c9c;
-  height: 100%;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  
+  
+  
+  
 }
 
-.div3 {
-  grid-column: span 4 / span 4;
+.site-header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.site-header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.site-header nav a:hover {
+  color: #999;
+}
+
+.conversor-app {
+  grid-column: span 6 / span 6;
   grid-row: span 5 / span 5;
-  grid-column-start: 3;
+  grid-column-start: 1;
   grid-row-start: 2;
-  background-color: #a79c9c;
+  background-color: #ece3e3;
+  border-color: black;
   height: 100%;
   width: 100%;
+  display:grid;
 }
 
-.div4 {
-  grid-column: span 4 / span 4;
-  grid-row: span 2 / span 2;
-  grid-column-start: 3;
-  grid-row-start: 7;
-  background-color: #f5c2c7;
+.cotação-moedas {
+  grid-column: span 2 / span 2;
+  grid-row: span 8 / span 8;
+  grid-column-start: 7;
+  grid-row-start: 2;
+  background-color: white;
+  border-color: black;
   height: 100%;
   width: 100%;
 }
 
 .div5 {
-  grid-column: span 2 / span 2;
-  grid-row: span 7 / span 7;
+  grid-column: span 3 / span 3;
+  grid-row: span 3 / span 3;
   grid-column-start: 1;
-  grid-row-start: 2;
-  background-color: bisque;
-  height: 100%;
-  width: 100%;
+  grid-row-start: 7;
+  background-color: #ece3e3;
 }
 
 .div6 {
-  grid-column: span 2 / span 2;
-  grid-row: span 7 / span 7;
-  grid-column-start: 7;
-  grid-row-start: 2;
-  background-color: bisque;
+  grid-column: span 3 / span 3;
+  grid-row: span 3 / span 3;
+  grid-column-start: 4;
+  grid-row-start: 7;
+  background-color: #ece3e3;
+}
+
+.footer {
+  grid-column: span 8 / span 8;
+  grid-column-start: 1;
+  grid-row-start: 10;
+  background-color:  #fffdfd;
   height: 100%;
   width: 100%;
+
+  color: #080808;                      
+  text-align: center;               
+  font-size: 14px;                   
+  line-height: 1.6;                
+  
+}
+
+footer a {
+  color: #4db8ff;                  
+  text-decoration: none;             
+  transition: color 0.3s ease;       
+}
+
+footer a:hover {
+  color: #fff;                   
+  text-decoration: underline;       
 }
 
 div button {
