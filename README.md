@@ -8,5 +8,3 @@ Link da Api: https://docs.awesomeapi.com.br/api-de-moedas
 
 Feito com: Javascript + Ajax + Jquery
 
-## Veja também a versão android deste projeto
-[![Android-currency-converter-app](https://github-readme-stats.vercel.app/api/pin/?username=RubenFilipe07&repo=Android-currency-converter-app)](https://github.com/RubenFilipe07/Android-currency-converter-app)

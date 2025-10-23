@@ -15,7 +15,6 @@ $.ajax({
 function converter() {
   var euro = resultado["EUR"]["bid"]
   var dolar = resultado["USD"]["bid"]
-  var dolarTurismo = resultado["USDT"]["bid"]
   var dolarCanadense = resultado["CAD"]["bid"]
   var dolarAustraliano = resultado["AUD"]["bid"]
   var libra = resultado["GBP"]["bid"]
@@ -79,10 +78,6 @@ function converter() {
 
   if (selecionado == "USD" && !isNaN(numeroDigitado) && !isNaN(dolar)) {
       calcular(dolar, "USD")
-  }
-
-  if (selecionado == "USDT" && !isNaN(numeroDigitado) && !isNaN(dolarTurismo)) {
-    calcular(euro, "USDT")
   }
 
   if (selecionado == "CAD" && !isNaN(numeroDigitado) && !isNaN(dolarCanadense)) {
