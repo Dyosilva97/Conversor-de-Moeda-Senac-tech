@@ -1,101 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-   <meta charset="UTF-8">
-   <title>Conversor</title> 
-   <meta name="viewport" content="width=device-width,initial-scale=1">
-   <link rel="stylesheet" media="(min-width: 599px)" href="../src/styles/styles.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="../src/js/conversor.js"></script>
+  <meta charset="UTF-8">
+  <title>Conversor</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" media="(min-width: 599px)" href="../src/styles/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../src/js/conversor.js"></script>
 </head>
+
 <body>
 
-<div class="conversor-moeda">
+  <div class="conversor-moeda">
 
-  <div class="header">
-    <div class="logo">
-      💱 <span>Conversor de Moedas</span>
-    </div>
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Cotações</a>
-      <a href="#">Conversor</a>
-      <a href="#">Contato</a>
-    </nav>
-  </div>
-  
-  <section class="conversor-app">
-    <div class="div1">
-      <h2 class="titulo">Conversor de Moedas</h2>
-      <input id="entrada" type="text" placeholder="Digite o valor" oninput="maskinput(this)">
-    </div>
-    
-    <div class="selecionar-moedas">
-      <label for="moeda-origem">De:</label>
-      <select id="moeda-origem">
-        <option value="BRL">Real Brasileiro (BRL)</option>
-        <option value="USD">Dólar Americano (USD)</option>
-        <option value="EUR">Euro (EUR)</option>
-        <option value="GBP">Libra Esterlina (GBP)</option>
-        <option value="JPY">Iene Japonês (JPY)</option>
-        <option value="ARS">Peso Argentino (ARS)</option>
-        <option value="CNY">Yuan Chinês (CNY)</option>
-        <option value="BTC">Bitcoin (BTC)</option>
-      </select>
+    <div class="header">
 
-      <button style="margin-bottom: 30px;" id="inverter">🔁</button>
+      <div class="logo">
+        💱 <span>Conversor de Moedas</span>
+      </div>
 
-      <label for="moeda-destino">Para:</label>
-      <select id="moeda-destino">
-        <option value="USD">Dólar Americano (USD)</option>
-        <option value="BRL">Real Brasileiro (BRL)</option>
-        <option value="EUR">Euro (EUR)</option>
-        <option value="GBP">Libra Esterlina (GBP)</option>
-        <option value="JPY">Iene Japonês (JPY)</option>
-        <option value="ARS">Peso Argentino (ARS)</option>
-        <option value="CNY">Yuan Chinês (CNY)</option>
-        <option value="BTC">Bitcoin (BTC)</option>
-      </select>
+      <nav class="navegação">
+        <a href="#">Início</a>
+        <a href="#">Cotações</a>
+        <a href="#">Conversor</a>
+        <a href="#">Contato</a>
+      </nav>
+
     </div>
 
-    <button onclick="converter()">Converter</button>
+    <section class="conversor-app">
 
-    <div id="saida" class="resultado"></div>
-    <div id="atualizacao" class="atualizacao"></div>
-  </section>
+      <div class="div1">
 
-  <div class="cotação-moedas">
-   <iframe src="https://br.widgets.investing.com/live-currency-cross-rates?theme=lightTheme&cols=bid,ask,time&pairs=2,4,7,5,9412,1505,1506,9413,9414,10461,1507,1508,1509,9415,10459,9416,1510,9418,9419,9420,1512,9421,9422,9423,9424,9425,9426,9427,1513,9428,9429,9430,9431,9434,1514,9435,9436,9437,9438,9439,9440,9441,10460,9442,9443,9444,10457,9445,9446,9447,9448,9449,1515,9450,9451,9457,1516,10458,9452,9453,9454,9455" width="100%" height="685" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+        <h2 class="titulo">Conversor</h2>
+        <input id="entrada" type="text" placeholder="Digite o valor" oninput="maskinput(this)">
+
+      </div>
+
+      <div class="destino">
+
+        <label for="moeda-origem">De:</label>
+        <label for="moeda-destino">Para:</label>
+
+      </div>
+
+      <div class="selecionar-moedas">
+
+        <select id="moeda-origem">
+          <option value="BRL">Real Brasileiro (BRL)</option>
+          <option value="USD">Dólar Americano (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">Libra Esterlina (GBP)</option>
+          <option value="JPY">Iene Japonês (JPY)</option>
+          <option value="ARS">Peso Argentino (ARS)</option>
+          <option value="CNY">Yuan Chinês (CNY)</option>
+          <option value="BTC">Bitcoin (BTC)</option>
+        </select>
+
+        <button class="inverter" id="inverter">🔁</button>
+
+        <select id="moeda-destino">
+          <option value="USD">Dólar Americano (USD)</option>
+          <option value="BRL">Real Brasileiro (BRL)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">Libra Esterlina (GBP)</option>
+          <option value="JPY">Iene Japonês (JPY)</option>
+          <option value="ARS">Peso Argentino (ARS)</option>
+          <option value="CNY">Yuan Chinês (CNY)</option>
+          <option value="BTC">Bitcoin (BTC)</option>
+        </select>
+      </div>
+
+      <button class="converter" onclick="converter()">Converter</button>
+
+      <div id="saida" class="resultado"></div>
+      <div id="atualizacao" class="atualizacao"></div>
+
+    </section>
+
+    <div class="cotação-moedas">
+
+      <iframe
+        src="https://br.widgets.investing.com/live-currency-cross-rates?theme=lightTheme&cols=bid,ask,time&pairs=2,4,7,5,9412,1505,1506,9413,9414,10461,1507,1508,1509,9415,10459,9416,1510,9418,9419,9420,1512,9421,9422,9423,9424,9425,9426,9427,1513,9428,9429,9430,9431,9434,1514,9435,9436,9437,9438,9439,9440,9441,10460,9442,9443,9444,10457,9445,9446,9447,9448,9449,1515,9450,9451,9457,1516,10458,9452,9453,9454,9455"
+        width="100%" height="685" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0">
+      </iframe>
+
+    </div>
+
+    <div class="cotação-criptomoedas">
+
+      <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&pref_coin_id=1505&invert_hover=no">
+      </iframe>
+
+    </div>
+
+    <div class="div6">
+
+      <iframe
+        src="https://ssltsw.investing.com?lang=12&forex=2103,1617,1513,1,3,9,10&commodities=8833,8849,8830,8836,8832,8918,8911&indices=23660,166,172,27,179,170,174&stocks=358,474,446,345,346,347,348&tabs=1,2,3,4"
+        width="317" height="467">
+      </iframe>
+
+    </div>
+
+    <div class="footer">
+
+      <p>Desenvolvido por <strong>Dyonathan Silva</strong></p>
+
+      <p>© 2025 Conversor de Moedas — Todos os direitos reservados</p>
+
+    </div>
+
   </div>
-
-  <div class="cotação-criptomoedas">
-  <iframe 
-    src="https://widget.coinlib.io/widget?type=full_v2&theme=light&pref_coin_id=1505&invert_hover=no">
-  </iframe>
-
-</div>
-
-  <div class="div6">
-    <iframe src="https://ssltsw.investing.com?lang=12&forex=2103,1617,1513,1,3,9,10&commodities=8833,8849,8830,8836,8832,8918,8911&indices=23660,166,172,27,179,170,174&stocks=358,474,446,345,346,347,348&tabs=1,2,3,4" width="317" height="467"></iframe>
-  </div>
-
-  <div class="footer">
-    <p>Desenvolvido por <strong>Dyonathan Silva</strong></p>
-    <p>© 2025 Conversor de Moedas — Todos os direitos reservados</p>
-  </div>
-
-  </div>
-  
-  
-
-</div>
 </body>
+
 </html>
-
-
-
-
-
-
-  
-  

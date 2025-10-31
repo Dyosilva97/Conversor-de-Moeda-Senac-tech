@@ -19,32 +19,34 @@ body {
 
 .header {
   grid-column: span 8 / span 8;
-  background-color: white;
+  background-color: rgb(223, 233, 232);
   display: flex;
   height: 100%;
   width: 100%;
-
   justify-content: space-between;
   align-items: center;
-  width: 95%;
-   
 }
 
 .logo {
-  font-size: 20px;
+  font-family: emoji;
+  font-size: 25px;
   font-weight: bold;
-}
-
-.nav a {
-  color: #111;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
   margin-left: 20px;
-  font-size: 14px;
-  transition: color 0.3s ease;
+  gap: 10px;
 }
 
-.nav a:hover {
-  color: rgb(17, 17, 17);
+.navegação a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: emoji;
+  position: relative;
+  margin-right: 50px;
 }
 
 .conversor-app {
@@ -55,10 +57,11 @@ body {
   background-color: white;
   height: 100%;
   width: 100%;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  border: 2px solid #ccc;
   box-sizing: border-box;
   overflow: hidden;
   gap: 1px;
@@ -70,30 +73,59 @@ body {
   width: 60%;
   flex-direction: column;
   align-items: center;
+}
 
+.destino {
+  height: 10px;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: emoji;
 }
 
 .selecionar-moedas {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: center;
   gap: 20px;
   height: 30%;
-  width: 80%;
+  width: 90%;
 }
 
-.conversor-app button {
-  width: 40%;
+.inverter {
+  width: 30%;
   padding: 10px;
   background-color: rgb(120, 121, 118);
   border: none;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 2px;
 }
 
-.conversor-app button:hover {
+.inverter:hover {
+  background-color: #7eff7e;
+  color: #000;
+}
+
+.converter {
+  width: 30%;
+  padding: 10px;
+  background-color: rgb(120, 121, 118);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+  font-family: emoji;
+  font-weight: bold;
+}
+
+.converter:hover {
   background-color: #7eff7e;
   color: #000;
 }
@@ -122,10 +154,17 @@ body {
   grid-row: span 8 / span 8;
   grid-column-start: 7;
   grid-row-start: 2;
-  background-color: white;
+  background-color: rgb(240, 237, 237);
   border-radius: 10px;
   height: 100%;
   width: 100%;
+}
+
+.cotação-moedas iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: block;
 }
 
 .cotação-criptomoedas {
@@ -136,7 +175,6 @@ body {
   background-color: #ffffff;
   height: 100%;
   width: 100%;
-  
 }
 
 .cotação-criptomoedas iframe {
@@ -154,62 +192,30 @@ body {
   background-color: #ece3e3;
   height: 100%;
   width: 100%;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  border-radius: 10px;
 }
 
 .footer {
   grid-column: span 8 / span 8;
   grid-column-start: 1;
   grid-row-start: 10;
-  background-color:  #fffdfd;
-  border-radius: 10px;
+  background-color: rgb(223, 233, 232);
   height: 100%;
   width: 100%;
-
-  color: #080808;                      
-  text-align: center;               
-  font-size: 14px;                   
-  line-height: 1.6;                
-  
-}
-
-footer a {
-  color: #4db8ff;                  
-  text-decoration: none;             
-  transition: color 0.3s ease;       
-}
-
-footer a:hover {
-  color: #fff;                   
-  text-decoration: underline;       
-}
-
-div button {
-  padding: 7px;
-  border: 1px solid #eee;
-  border-radius: 6px;
-  background-color: greenyellow;
-  font-size: 18px;
-  width: 45%;
-  margin: 30px 0px 0px 0px;
-}
-
-button:hover {
-  color: white;
-  border: 1px solid black;
-  transition: 350ms;
-  background-color: rgba(109, 70, 252, 1);
-}
-
-button:active {
-  background-color: rgb(57, 42, 110);
+  color: #080808;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .titulo {
   margin: 0px 0px 30px 0px;
+  font-size: 40px;
+  font-family: emoji;
 }
 
 .alerta {
@@ -232,4 +238,3 @@ button:active {
   background-color: #d1e7dd;
   border-color: #badbcc;
 }
-
