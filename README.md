@@ -1,10 +1,28 @@
-# Conversor-de-moedas
-Conversor de moedas com api da awesomeapi (gratuita) 
-<p>
-<a href="https://rubenfilipe07.github.io/Conversor-de-moedas/">  <img src="https://user-images.githubusercontent.com/53026536/148704823-f52cb220-eeb8-43b6-b2fc-c9a64e86999c.png" width="500">
-  </a>
-</p> 
-Link da Api: https://docs.awesomeapi.com.br/api-de-moedas
+# 💱 Conversor de Moedas
 
-Feito com: Javascript + Ajax + Jquery
+Um projeto simples e funcional de **Conversor de Moedas** feito em **HTML**, **CSS** e **JavaScript**, utilizando a **API pública [ExchangeRate.host](https://exchangerate.host/)** para obter cotações de moedas em tempo real.
 
+---
+
+## 🚀 Demonstração
+
+Você pode usar o conversor diretamente no navegador — basta abrir o arquivo `index.html`.
+
+![demo](https://img.shields.io/badge/Projeto-HTML%2FCSS%2FJS-blue?style=for-the-badge)
+
+---
+
+## 🧩 Tecnologias utilizadas
+
+- **HTML5** → estrutura da página  
+- **CSS3** → estilização e layout responsivo  
+- **JavaScript (ES6)** → lógica do conversor e integração com a API  
+- **[ExchangeRate.host](https://exchangerate.host/)** → API gratuita e de uso público para cotações de moedas
+
+---
+
+## 🌍 API usada
+
+A aplicação consome a API pública:
+
+https://api.exchangerate.host/latest?base=USD
