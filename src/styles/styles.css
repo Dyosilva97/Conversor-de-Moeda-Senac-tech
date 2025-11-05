@@ -238,3 +238,17 @@ body {
   background-color: #d1e7dd;
   border-color: #badbcc;
 }
+
+.pagina-inicial {
+  grid-column: span 6 / span 6;
+  grid-row: span 5 / span 4;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+}
