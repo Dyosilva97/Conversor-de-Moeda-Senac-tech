@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Conversor de Moedas</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="conversor-moeda">
+      <header class="header">
+        <div class="logo">💱 <span>Conversor de Moedas</span></div>
+        <nav class="navegação">
+          <a href="/index.html">Início</a>
+          <a href="/conversor.html">Conversor</a>
+          <a href="/cotacoes.html">Cotações</a>
+          <a href="/sobre.html">Sobre</a>
+        </nav>
+      </header>
+
+      <section class="conversor-app">
+        <div class="titulo-entrada">
+          <h2 class="titulo">Conversor</h2>
+          <input id="entrada" type="text" placeholder="Digite o valor" inputmode="decimal" autocomplete="off" />
+        </div>
+
+        <div class="destino">
+          <label for="moeda-origem">De:</label>
+          <label for="moeda-destino">Para:</label>
+        </div>
+
+        <div class="selecionar-moedas">
+          <select id="moeda-origem"></select>
+          <button class="inverter" id="inverter" type="button">🔁</button>
+          <select id="moeda-destino"></select>
+        </div>
+
+        <button class="converter" id="converter" type="button">Converter</button>
+
+        <div id="saida" class="resultado"></div>
+        <div id="atualizacao" class="atualizacao"></div>
+      </section>
+
+      <footer class="footer">
+        <p>Desenvolvido por <strong>Dyonathan Silva</strong></p>
+        <p>© 2025 Conversor de Moedas — Todos os direitos reservados</p>
+      </footer>
+    </div>
+  </body>
+</html>

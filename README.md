@@ -4,11 +4,20 @@ Um projeto simples e funcional de **Conversor de Moedas** feito em **HTML**, **C
 
 ---
 
-## 🚀 Demonstração
+## 🚀 Como executar
 
-Você pode usar o conversor diretamente no navegador — basta abrir o arquivo `index.html`.
+```bash
+npm install
+npm run dev
+```
 
-![demo](https://img.shields.io/badge/Projeto-HTML%2FCSS%2FJS-blue?style=for-the-badge)
+O Vite abrirá automaticamente o projeto no navegador. Para gerar os arquivos otimizados para deploy:
+
+```bash
+npm run build
+```
+
+Os arquivos finais ficarão disponíveis na pasta `dist/`.
 
 ---
 

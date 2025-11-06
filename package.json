@@ -2,15 +2,16 @@
   "name": "conversor-de-moeda-senac-tech",
   "version": "1.0.0",
   "description": "Conversor de moedas com api da awesomeapi (gratuita) \r <p>\r <a href=\"https://rubenfilipe07.github.io/Conversor-de-moedas/\">  <img src=\"https://user-images.githubusercontent.com/53026536/148704823-f52cb220-eeb8-43b6-b2fc-c9a64e86999c.png\" width=\"500\">\r   </a>\r </p> \r Link da Api: https://docs.awesomeapi.com.br/api-de-moedas",
-  "main": "conversor.js",
+  "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.2"
-}
+    "vite": "^5.2.0"
+  }
 }
