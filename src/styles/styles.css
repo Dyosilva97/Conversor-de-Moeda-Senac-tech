@@ -20,6 +20,7 @@ body {
 .header {
   grid-column: span 8 / span 8;
   background-color: rgb(223, 233, 232);
+  border-radius: 10px;
   display: flex;
   height: 100%;
   width: 100%;
@@ -50,24 +51,25 @@ body {
 }
 
 .conversor-app {
-  grid-column: span 3 / span 3;
-  grid-row: span 3 / span 4;
-  grid-column-start: 1;
-  grid-row-start: 6;
+  grid-column: span 6 / span 6;
+  grid-row: span 5 / span 6;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  grid-row-start: 3;
   background-color: white;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 50px;
   border: 2px solid #ccc;
   box-sizing: border-box;
   overflow: hidden;
   gap: 1px;
 }
 
-.div1 {
+.titulo-entrada {
   display: flex;
   height: 30%;
   width: 60%;
@@ -155,7 +157,8 @@ body {
   grid-column-start: 7;
   grid-row-start: 2;
   background-color: rgb(240, 237, 237);
-  border-radius: 10px;
+  border-radius: 30px;
+  border-color: #080808;
   height: 100%;
   width: 100%;
 }
@@ -163,7 +166,8 @@ body {
 .cotação-moedas iframe {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 40px;
+  border-color: #080808;
   display: block;
 }
 
@@ -180,14 +184,15 @@ body {
 .cotação-criptomoedas iframe {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 60px;
+  border-color: #e4dfdf;
   display: block;
 }
 
-.div6 {
-  grid-column: span 3 / span 3;
-  grid-row: span 3 / span 4;
-  grid-column-start: 4;
+.calendario-economico {
+  grid-column: span 3 / span 6;
+  grid-row: span 4 / span 4;
+  grid-column-start: 1;
   grid-row-start: 6;
   background-color: #ece3e3;
   height: 100%;
@@ -195,8 +200,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  border-radius: 10px;
+  gap: 50px;
+  border-radius: 50px;
+  border-color: #080808;
+}
+
+.calendario-economico iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  border-color: #080808;
+  display: block;
 }
 
 .footer {
@@ -204,6 +218,7 @@ body {
   grid-column-start: 1;
   grid-row-start: 10;
   background-color: rgb(223, 233, 232);
+  border-radius: 10px;
   height: 100%;
   width: 100%;
   color: #080808;
@@ -241,9 +256,10 @@ body {
 
 .pagina-inicial {
   grid-column: span 6 / span 6;
-  grid-row: span 5 / span 4;
-  grid-column-start: 1;
-  grid-row-start: 2;
+  grid-row: span 5 / span 6;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  grid-row-start: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,4 +267,61 @@ body {
   height: 100%;
   width: 100%;
   gap: 20px;
+  border-color: #080808;
+  background-color: rgb(234, 240, 227);
+  border-radius: 50px;
+}
+
+.sobre-site {
+  grid-column: span 4 / span 4;
+  grid-row: span 4 / span 4;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+  width: 90%;
+  gap: 20px;
+  border-color: #080808;
+  background-color: rgb(234, 240, 227);
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.tecnologias {
+  grid-column: span 4 / span 4;
+  grid-row: span 4 / span 4;
+  grid-column-start: 1;
+  grid-row-start: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 90%;
+  gap: 20px;
+  border-color: #080808;
+  background-color: rgb(234, 240, 227);
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.autor {
+  grid-column: span 5 / span 5;
+  grid-row: span 4 / span 4;
+  grid-column-start: 5;
+  grid-row-start: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+  gap: 20px;
+  border-color: #080808;
+  background-color: rgb(234, 240, 227);
+  border-radius: 50px;
+  padding: 20px;
 }
