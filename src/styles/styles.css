@@ -3,7 +3,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background-color: rgb(241, 252, 238);
+  background: linear-gradient(to bottom, #595f39,  #C4C5BA);
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -20,10 +20,9 @@ body {
 .header {
   grid-column: span 8 / span 8;
   background-color: rgb(249, 252, 251);
-  border-radius: 10px;
   box-shadow: 0 10px 10px rgba(14, 13, 13, 0.1);
   display: flex;
-  height: 100%;
+  height: 60%;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -58,11 +57,10 @@ body {
   grid-column-end: 8;
   grid-row-start: 3;
   height: 50%;
-  width: 50%;
+  width: 43%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid #ccc;
   box-sizing: border-box;
   overflow: hidden;
   gap: 1px;
@@ -70,10 +68,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
-  background-color: rgb(234, 240, 227);
+  background-color:  #C4C5BA;
   padding: 20px;
-  border: 1px solid black;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
   border-radius: 45px;
   z-index: 1000;
@@ -109,7 +105,7 @@ body {
 .inverter {
   width: 30%;
   padding: 10px;
-  background-color: rgb(120, 121, 118);
+  background-color: #595f39;
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -124,9 +120,9 @@ body {
 }
 
 .converter {
-  width: 30%;
+  width: 22%;
   padding: 10px;
-  background-color: rgb(120, 121, 118);
+  background-color: #595f39;
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -239,9 +235,10 @@ body {
   grid-row-start: 10;
   background-color: rgb(249, 252, 251);
   box-shadow: 0 -10px 10px rgba(14, 13, 13, 0.1);
-  border-radius: 10px;
-  height: 100%;
+  height: 8%;
   width: 100%;
+  position: fixed;
+  bottom: 0;
   color: #080808;
   text-align: center;
   font-size: 14px;
@@ -288,15 +285,13 @@ body {
   height: 50%;
   width: 50%;
   gap: 20px;
-  border-color: #080808;
-  background-color: rgb(234, 240, 227);
+  background-color: #C4C5BA;
   border-radius: 50px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  border: 1px solid black;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
   border-radius: 45px;
   z-index: 1000;
@@ -313,11 +308,11 @@ body {
   justify-content: center;
   position: relative;
   top: 8%;
-  height: 75%;
+  height: 90%;
   width: 90%;
   gap: 20px;
   border-color: #080808;
-  background-color: rgb(234, 240, 227);
+  background-color: #C4C5BA;
   border-radius: 50px;
   padding: 20px;
   border: 0px solid black;
@@ -340,7 +335,7 @@ body {
   width: 90%;
   gap: 20px;
   border-color: #080808;
-  background-color: rgb(234, 240, 227);
+  background-color: #C4C5BA;
   border-radius: 50px;
   padding: 20px;
   border: 0px solid black;
@@ -362,7 +357,7 @@ body {
   width: 90%;
   gap: 20px;
   border-color: #080808;
-  background-color: rgb(234, 240, 227);
+  background-color: #C4C5BA;
   border-radius: 50px;
   padding: 20px;
   border: 0px solid black;
