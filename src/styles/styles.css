@@ -364,69 +364,78 @@ body {
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1024px) {
+  .conversor-app {
+    width: 60%;
+    height: auto;
+  }
+}
 
-  .navegação a {
-    margin-right: 20px;
+/* Celulares médios */
+@media (max-width: 768px) {
+  .conversor-app {
+    width: 60%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .titulo {
+    font-size: 28px;
+  }
+
+  .converter, .inverter {
     font-size: 14px;
   }
 
-  .conversor-app {
-    width: 95%;
-    height: auto;
-    padding: 1px;
-    gap: 22px;
+  .conversor-app input,
+  .conversor-app select {
+    width: 100%;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .header {
+    font-size: 10%;
+    display: flex;
+    width: 102%;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
   }
 
   .pagina-inicial {
-    width: 85%;
+    width: 80%;
     height: auto;
-    padding: 16px;
-    gap: 15px;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
   }
 
-  .cotação-moedas {
+  .logo {
+    font-size: 20px;
+  }
+
+  .navegação a {
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .conversor-app {
+    gap: 17px;
+    width: 90%;
     height: auto;
-    width: 350%;
-    display: flex;  
-    flex-direction: column;
-    top: -4%;
-    left: -280%;
-    margin-top: 10px;
+    border-radius: 25px;
+    padding: 3px;
   }
 
-  .cotação-criptomoedas {
-    height: auto;
-    width: 110%;
-    display: flex;  
-    flex-direction: column;
-    top: 200%;
-    left: 13%;
-    margin-top: 10px;
+  .titulo {
+    font-size: 22px;
   }
 
-  .calendario-economico {
-    height: auto;
-    width: 110%;
-    display: flex;  
-    flex-direction: column;
-    top: 205%;
-    left: 14%;
-    margin-top: 10px;
+  .footer {
+    font-size: 12px;
   }
-
-  .sobre-site, .tecnologias, .autor {
-    width: 78%;
-    font-size: 65%;
-    height: auto;
-    top: 0;
-    left: 0;
-    margin-top: 10px;
-  }
-
-
- 
-  
 }
+
+
